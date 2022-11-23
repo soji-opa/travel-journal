@@ -1,38 +1,109 @@
-.App {
-  text-align: center;
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+	--clr-violet: hsl(257, 40%, 49%);
+	--clr-sfmagenta: hsl(300, 69%, 71%);
+	--clr-white: hsl(0, 0%, 100%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	margin: 0;
+	font-family: 'Inter', sans-serif;
+	min-height: 100vh;
+	background-color: var(--clr-violet);
+	background-repeat: no-repeat;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+h1,
+h2,
+h3 {
+	line-height: 1.1;
+	color: black;
 }
 
-.App-link {
-  color: #61dafb;
+p {
+	line-height: 1.6;
+	font-size: 11px;
+	color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	cursor: pointer;
+	font-size: 11px;
+	margin-left: 14px;
+	color: #918e9b;
+}
+
+/* .App {
+	text-align: center;
+} */
+
+header {
+	background-color: #f55a5a;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.header-text {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.card {
+	display: flex;
+	background-color: aquamarine;
+	gap: 1em;
+	align-items: center;
+	justify-content: center;
+	border-bottom: 1px solid;
+	padding: 1.5em;
+}
+
+.card-img {
+	border-radius: 10px;
+	width: 300px;
+}
+
+.card-location {
+	display: flex;
+	align-items: center;
+}
+.card-location h2 {
+	margin-left: 8px;
+	font-size: 11px;
+	text-transform: capitalize;
+	letter-spacing: 1.5px;
+	font-weight: 400;
+}
+
+.location-title {
+	margin-bottom: 0.5em;
+	margin-top: 0.1em;
+	font-size: 25px;
+}
+
+.card-date {
+	font-size: 11;
+	font-weight: 700;
+	margin-bottom: 0.3em;
+}
+
+.card-description {
+	font-weight: 400;
 }
