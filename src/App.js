@@ -4,18 +4,8 @@ import Header from './components/Header';
 import data from '../src/data';
 
 function App() {
-	const card = data.map((item) => (
-		<Card
-			key={item.id}
-			title={item.title}
-			location={item.location}
-			link={item.googleMapsUrl}
-			description={item.description}
-			image={item.imageUrl}
-			startdate={item.startDate}
-			enddate={item.endDate}
-		/>
-	));
+	const card = data.map((item) => <Card key={item.id} destination={item} />);
+
 	return (
 		<div className='App'>
 			<Header />
